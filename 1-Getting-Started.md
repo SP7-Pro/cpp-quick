@@ -32,3 +32,12 @@ Other than 0 and 1, operating systems have a vast collection of return codes. I 
 |128           |Invalid argument to exit |
 
 You can read more about return codes of Unix [here](https://www.gnu.org/software/bash/manual/bash.html#Exit-Status).
+**Windows Return Codes**
+| Return Codes | Meaning |
+|:------------:|:--------|
+|0             |Success  |
+|1             |Invalid Function |
+|5             |Access Denied |
+|8             |Out of Memory |
+
+Windows has alot that just these that are mentioned here, It has 500 distinct return codes! You can read about them [here](https://learn.microsoft.com/en-us/windows/win32/debug/system-error-codes--0-499-).
