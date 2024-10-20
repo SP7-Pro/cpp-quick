@@ -1,4 +1,4 @@
-# Getting Started
+use# Getting Started
 ## Introduction 
 Getting started can be the most challenging point of learning a very new concept, after some time, you'll progress further and the concepts will be a piece of cake.
 ## Installing an IDE
@@ -30,4 +30,5 @@ Other than 0 and 1, operating systems have a vast collection of return codes. I 
 |1             |General Error  |
 |127           |Command not found |
 |128           |Invalid argument to exit |
+
 You can read more about return codes of Unix [here](https://www.gnu.org/software/bash/manual/bash.html#Exit-Status).
