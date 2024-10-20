@@ -1,4 +1,4 @@
-use# Getting Started
+# Getting Started
 ## Introduction 
 Getting started can be the most challenging point of learning a very new concept, after some time, you'll progress further and the concepts will be a piece of cake.
 ## Installing an IDE
