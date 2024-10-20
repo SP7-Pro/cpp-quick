@@ -8,6 +8,7 @@ This series does not teach you to install and configure them. Instead, you'ld fo
 - [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) 
 - [Code::Blocks](https://www.codeblocks.org/downloads/)
 - [Eclipse Kepler](https://www.eclipse.org/downloads/packages/release/kepler/sr2/eclipse-ide-cc-developers)
+
 IDEs will install an compiler for you. No need to worry about compiler installation!
 ## Writing Code
 Let's get to writing some actual code.
