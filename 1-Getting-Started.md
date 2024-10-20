@@ -15,7 +15,7 @@ Let's get to writing some actual code.
 ```cpp
 // main gets called when programs begins executing 
 int main(){
-    every piece of code you write here gets executed 
+    // every piece of code you write here gets executed 
     return 0; // returns 0 ( success ) 
 }
 ```
