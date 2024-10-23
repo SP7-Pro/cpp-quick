@@ -14,7 +14,7 @@ Like you were importing and using (eating) blueberries from a different region, 
 #include <iostream>
 ```
 This includes a header iostream. You'll get to know a little bit about it in the next lesson.
-#### `define`
+#### `#define`
 Macros are pieces of code that are expanded by preprocesser by their definition.
 The simplest work of a macro is, whenever the compiler sees a macro in your code, it replaces that macro with its defined value.
 Here's how you would define a macro in a line of code:
