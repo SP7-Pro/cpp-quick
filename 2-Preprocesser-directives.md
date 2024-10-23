@@ -61,3 +61,16 @@ Now to make the program execute successfully:
 ourEntireProgramCode
 ```
 `ourEntireProgramCode` is replaced entirely with out program code. Cool, isn't it?
+#### `#undef`
+This is the last one for this lesson :)
+The purpose of this directive is to undefine a macro. Means, to just remove it from our program.
+```cpp
+#define ourEntireProgramCode int main() { \
+							 return 0; \
+							 }
+
+#undef ourEntireProgramCode
+
+ourEntireProgramCode
+```
+This program results in an error. We do define `ourEntireProgramCode` macro, but later on, we undefine it, means it no longer exists in our program, and the compiler can't just find it.
