@@ -11,7 +11,7 @@ There are quite a few preprocesser directives, but for this lesson, we'll focus 
 #### `#include`
 Like you were importing and using (eating) blueberries from a different region, `#include` allows you to use contents of a file. Well, not any file, it could be a `.cpp`(C++ file),`.hpp`,`.c`(C file) or `h`. You're probably familiar with `.cpp` and `.c` but you may or may not `.h` or `.hpp`. Well, Those are header files. They're discussed in later lessons.
 ```cpp
-#include <iostream>
+#include <iostream> // iostream header, can be found under include folder of your compiler
 ```
 This includes a header iostream. You'll get to know a little bit about it in the next lesson.
 #### `#define`
@@ -19,18 +19,22 @@ Macros are pieces of code that are expanded by preprocesser by their definition.
 The simplest work of a macro is, whenever the compiler sees a macro in your code, it replaces that macro with its defined value.
 Here's how you would define a macro in a line of code:
 ```cpp
+// define a macro named 'My Macro'
 #define myMacro 0
 ```
 This is an Object-like macro.
 There are quite a few types of macros, but in practical terms, most commonly used ones are Object-like and Function-like macros, Out of which we'll focus on Object-like only because we haven't got to Fucntions chapter yet.
 Look at this code :
 ```cpp
+// You're already familiar with this
+
 int main(){
     return 0;
 }
 ```
 Now we'll add two lines:
 ```cpp
+// Define two macros 'myFunction' and 'myReturn'
 #define myFunction int main()
 #define myReturn return 0;
 ```
@@ -48,6 +52,7 @@ Quite Cool, Right? myFucntion gets replaced with `int main()` and `myReturn` get
 How about we write entire code in a macro? This isn't a good practice, but you can do it, using multiline macros. Yeah, we'll study this one too, because it's really simple.
 Here's the macro defintion:
 ```cpp
+// Mutline Macro
 #define ourEntireProgramCode int main() { \
 							 return 0; \
 							 }
@@ -69,8 +74,10 @@ The purpose of this directive is to undefine a macro. Means, to just remove it f
 							 return 0; \
 							 }
 
-#undef ourEntireProgramCode
+#undef ourEntireProgramCode // Remove that macro
 
 ourEntireProgramCode
+
+// This program results in error 
 ```
 This program results in an error. We do define `ourEntireProgramCode` macro, but later on, we undefine it, means it no longer exists in our program, and the compiler can't just find it.
