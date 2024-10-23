@@ -45,3 +45,19 @@ myFunction {
 }
 ```
 Quite Cool, Right? myFucntion gets replaced with `int main()` and `myReturn` gets replaced with `return 0;`, resulting in proper execution of code.
+How about we write entire code in a macro? This isn't a good practice, but you can do it, using multiline macros. Yeah, we'll study this one too, because it's really simple.
+Here's the macro defintion:
+```cpp
+#define ourEntireProgramCode int main() { \
+							 return 0; \
+							 }
+```
+As you can see we've separated each line of code using a backslash. That's typically how you'ld do it.
+Now to make the program execute successfully:
+```cpp
+#define ourEntireProgramCode int main() { \
+							 return 0; \
+							 }
+ourEntireProgramCode
+```
+`ourEntireProgramCode` is replaced entirely with out program code. Cool, isn't it?
