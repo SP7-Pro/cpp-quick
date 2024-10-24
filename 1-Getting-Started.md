@@ -19,6 +19,15 @@ int main(){
     return 0; // returns 0 ( success ) 
 }
 ```
+You can use command line to compile this code:
+```bash
+g++ -o main main.cpp
+```
+Replace main.cpp with your file name.
+Now run it:
+```bash
+./main
+```
 What you see above, is the minimum code required to make a program that when compiled, compiles successfully and when ran, just executes and finishes.
 ## Functions 
 From the code snippet you saw above, `main` is the fucntion that gets called when your program starts executing. Functions are a complex topic, they're explained later on in this series, but for now I'll give a simple explanation. You can think of functions as a vending machine, you give some coins in it and get your desired drink. Fucntions can actually take some values or nothing, like the coin to the vending machine, that are discussed about later on in this series. when `main` is called, all the code in it gets executed. And you see that `return 0;`? That's a return code! After program finishes executing, it hands a value to the operating system. This value is like a secret code, that can indicate how program has finished executing. On most systems, the return code for success is 0 and failure is 1.
