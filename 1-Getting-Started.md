@@ -52,3 +52,21 @@ You can read more about return codes of Unix [here](https://www.gnu.org/software
 |8             |Out of Memory |
 
 Windows has alot than just these that are mentioned here, It has 500 distinct return codes! You can read about them [here](https://learn.microsoft.com/en-us/windows/win32/debug/system-error-codes--0-499-).
+## Comments 
+Comments are parts of your code ignored by the compiler. They're useful for providing additional information to the reader, i.e. the person reading to understand your code.
+Comments are of two types : multi-line and single-line.
+### Single-Line Comments 
+Use double slashes. Text after those slashes in the line will be ignored.
+```cpp
+// This is a single line comment,ignored by the compiler
+```
+### Mutli-Line Comments 
+Not much difference, just start writing them with `/*` and end with `*/`.
+```cpp
+/*
+Multi-Line Comment
+Another line
+More lines!
+*/
+```
+Comments can be used to generate documentation for your code using tools like Doxygen. You'll learn about that later on.
